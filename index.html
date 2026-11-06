@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Virtual Assistant & Tech Support</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .services-grid,
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        .project-img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #020617;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tu Nombre</h1>
+        <p class="subtitle">Tech-Savvy Virtual Assistant & Data Specialist</p>
+        <p>Estudiante de Informática apasionada por la optimización de procesos y gestión de datos.</p>
+        <a href="#contacto" class="btn">Trabajemos juntos</a>
+    </header>
+
+    <div class="container">
+
+        <!-- SOBRE MÍ -->
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Combino habilidades de gestión administrativa con la lógica estructurada de la informática para ofrecer
+                asistencia técnica, organización de hojas de cálculo avanzadas y optimización de flujos de trabajo.</p>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Gestión de Datos y Excel</h3>
+                    <p>Limpieza de datos, fórmulas analíticas (SUMAR.SI, BUSCARV) y diseño de dashboards ejecutivos en
+                        Google Sheets.</p>
+                </div>
+                <div class="card">
+                    <h3>Organización de Proyectos</h3>
+                    <p>Estructuración de tableros Kanban y gestión de flujos de trabajo en Notion y Trello.</p>
+                </div>
+                <div class="card">
+                    <h3>Documentación (SOPs)</h3>
+                    <p>Redacción limpia y detallada de manuales operativos y procedimientos estándar para empresas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section id="portfolio">
+            <h2>Muestras de Trabajo</h2>
+            <div class="projects-grid">
+
+                <!-- MUESTRA 1: GOOGLE SHEETS -->
+                <div class="card">
+                    <img src="dashboard-preview.png" alt="Dashboard en Google Sheets" class="project-img">
+                    <h3>Control de Ventas & Dashboard Ejecutivo</h3>
+                    <p>Transformación de datos transaccionales en un panel interactivo con métricas clave y gráficos de
+                        ingresos en Google Sheets.</p>
+                    <small style="color: var(--text-muted);">Herramientas: Google Sheets, Fórmulas Avanzadas,
+                        Gráficos</small>
+                </div>
+
+                <!-- MUESTRA 2: NOTION / TRELLO -->
+                <div class="card">
+                    <img src="trello-preview.png" alt="Tablero de Proyectos" class="project-img">
+                    <h3>Sistema de Gestión de Proyectos</h3>
+                    <p>Diseño de flujo de trabajo visual para seguimiento de tareas, prioridades y entregas del equipo.
+                    </p>
+                    <small style="color: var(--text-muted);">Herramientas: Notion, Trello</small>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto o necesitas optimizar tus operaciones administrativas?</p>
+            <p><strong>Email:</strong> valyvalemzuela@gmail.com</p>
+            <a href="https://www.upwork.com" target="_blank" class="btn">Ver Perfil en Upwork</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Josemith Val — Virtual Assistant & Tech Support</p>
+    </footer>
+
+</body>
+
+</html>
